@@ -59,7 +59,7 @@ var Dec = typeof parent.window.Dec !== "undefined" ? parent.window.Dec : null;
 			//pagination.min.js config object property 
 			pagination: {
 
-					config:function(dataset,pageCounts,url) {
+					config:function(dataset,pageCounts,target,url) {
 
 						let configSet = {
     							dataSource: dataset,
@@ -68,7 +68,7 @@ var Dec = typeof parent.window.Dec !== "undefined" ? parent.window.Dec : null;
     							showGoButton: true,
     							callback: function(data, pagination) {
     								let path = F_.FRServletURL+"?viewlet="+url;
-    								F_.doHyperlink("post", path, {pageNumber:pagination.pageNumber,pageSize:pagination.pageSize}, "wt_web_frame0");
+    								F_.doHyperlink("post", path, {pageNumber:pagination.pageNumber,pageSize:pagination.pageSize}, target);
     							}
   						};
 
