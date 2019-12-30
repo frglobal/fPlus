@@ -24,7 +24,7 @@ var Dec = typeof parent.window.Dec !== "undefined" ? parent.window.Dec : null;
 
 		},
 
-		pcFormula:function(formula) {
+		webFormula:function(formula) {
 			//
 			FR.remoteEvaluate(formula);
 		},
