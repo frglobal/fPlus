@@ -24,6 +24,11 @@ var Dec = typeof parent.window.Dec !== "undefined" ? parent.window.Dec : null;
 
 		},
 
+		pcFormula:function(formula) {
+			//
+			FR.remoteEvaluate(formula);
+		},
+
 		//Hyperlink Method rewrite from FR.doHyperlink....
 		doHyperlink:function(linkType, url, para, target, feature, title) {
 
