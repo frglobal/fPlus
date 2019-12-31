@@ -112,19 +112,26 @@ var Dec = typeof parent.window.Dec !== "undefined" ? parent.window.Dec : null;
 
 				defaultDisplay:function(obj,html){
 					let btnDom = obj.element;
-					let topPosition = parseInt(btnDom.css("height"))/2 + "px";
+					let halfHeight = parseInt(btnDom.css("height"))/2 + "px";
+					//remove original span tag
 					btnDom.children().children().remove();
+					//add new span > svg elemnt
 					btnDom.children().html(html);
+					//change new span css properties
 					btnDom.children().children().css({
 														"position": "relative",
 														"display": "inline-block",
-														"top": topPosition,
+														"top": halfHeight,
 														"transform": "translateY(-50%)",
     													"left": "0",
     													"right": "0",
     													"margin": "auto",
     													"text-align": "center",
 												})
+					//change svg height
+					btnDom.children().children().children().css({
+						"height": halfHeight,
+					})
 					return this;
 				},
 				defaultEffect:function(obj){
