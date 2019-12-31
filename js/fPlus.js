@@ -112,15 +112,13 @@ var Dec = typeof parent.window.Dec !== "undefined" ? parent.window.Dec : null;
 
 				defaultDisplay:function(obj,html){
 					let btnDom = obj.element;
+					let topPosition = parseInt(btnDom.css("height"))/2 + "px";
 					btnDom.children().children().remove();
 					btnDom.children().html(html);
 					btnDom.children().children().css({
 														"position": "relative",
 														"display": "inline-block",
-    													"top": "10px",
-    													"-webkit-transform": "translateY(-50%)",
-    													"-ms-transform": "translateY(-50%)",
-    													"transform": "translateY(-50%)",
+    													"top": topPosition,
     													"left": "0",
     													"right": "0",
     													"margin": "auto",
