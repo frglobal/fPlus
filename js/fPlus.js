@@ -118,7 +118,8 @@ var Dec = typeof parent.window.Dec !== "undefined" ? parent.window.Dec : null;
 					btnDom.children().children().css({
 														"position": "relative",
 														"display": "inline-block",
-    													"top": topPosition,
+														"top": topPosition,
+														"transform": "translateY(-50%)",
     													"left": "0",
     													"right": "0",
     													"margin": "auto",
