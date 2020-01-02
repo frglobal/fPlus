@@ -115,7 +115,7 @@ var Dec = typeof parent.window.Dec !== "undefined" ? parent.window.Dec : null;
 					let halfHeight = parseInt(btnDom.css("height"))/2 + "px";
 					//remove original span tag
 					btnDom.children().children().remove();
-					//add new span > svg elemnt
+					//add new icon style, span > svg elemnt
 					btnDom.children().html(html);
 					//change new span css properties
 					btnDom.children().children().css({
