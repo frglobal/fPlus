@@ -1,0 +1,23 @@
+.sp-thumbnail {
+	width: 100%;
+	padding: 8px;
+	background-color: #F0F0F0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.sp-thumbnail-title {
+	margin-bottom: 5px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #333;
+}
+
+.sp-thumbnail-description {
+	color: #333;
+}
+
+.links {
+	text-align: center;
+	margin-top: 10px;
+}
